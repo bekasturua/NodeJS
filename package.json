@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/bekasturua/NodeJS-First-App/issues"
   },
-  "homepage": "https://github.com/bekasturua/NodeJS-First-App#readme"
+  "homepage": "https://github.com/bekasturua/NodeJS-First-App#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
 }
