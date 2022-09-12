@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-first-app",
+  "version": "1.0.0",
+  "description": "Complete node.js Guide",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bekasturua/NodeJS-First-App.git"
+  },
+  "author": "Beka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bekasturua/NodeJS-First-App/issues"
+  },
+  "homepage": "https://github.com/bekasturua/NodeJS-First-App#readme"
+}
