@@ -7,7 +7,7 @@ class Product {
     this.price = price;
     this.description = description;
     this.imageUrl = imageUrl;
-    this._id = new mongodb.ObjectId(id);
+    this._id = id ? new mongodb.ObjectId(id) : null;
   }
 
   save() {
@@ -40,17 +40,19 @@ class Product {
         console.log(products);
         return products;
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
-  static FindByPk(prodId) {
+  static findById(prodId) {
     const db = getDb();
     return db
       .collection("products")
       .find({ _id: new mongodb.ObjectId(prodId) })
       .next()
       .then((product) => {
-        console.log(Product);
+        console.log(product);
         return product;
       })
       .catch((err) => {
